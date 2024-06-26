@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light p-3 mb-2 bg-secondary text-white bg-opacity-10">
-    <a class="navbar-brand mx-auto ps-5 ms-5" href="#"><img src="/static/pawfam_logo.png" alt="PawFam-logo"
+    <a class="navbar-brand mx-auto ps-5 ms-5" href="{% url 'home' %}"><img src="/static/pawfam_logo.png" alt="PawFam-logo"
             style="height: 60px; width: 100px; border-radius: 10%;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,13 +7,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto"> <!-- Aligns content to the right -->
+            <li class="nav-item pe-5">
+                <a class="nav-link fw-bolder" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item pe-5">
+                <a class="nav-link fw-bolder" href="{% url 'aboutus' %}">About Us</a>
+            </li>
             <li class="nav-item active pe-5">
                 <a class="nav-link" href="#">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
             </li>
-            <li class="nav-item pe-5 me-5">
-                <a class="nav-link fw-bolder" href="#">Register</a>
+            <li class="nav-item pe-5">
+                <a class="nav-link fw-bolder" href="#">Login</a>
             </li>
         </ul>
     </div>
@@ -96,3 +102,4 @@
         </ul>
     </div>
 </div>
+<!-- sidebar end -->
